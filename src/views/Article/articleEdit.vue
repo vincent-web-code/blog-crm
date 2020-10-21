@@ -25,10 +25,6 @@
 				<el-input v-model="model.title" placeholder="请输入标题"></el-input>
       </el-form-item>
 
-			<el-form-item label="描述" >
-				<el-input v-model="model.desc" placeholder="请输入描述"></el-input>
-      </el-form-item>
-
 			<el-form-item label="内容" >
 				<vue-editor v-model="model.content"></vue-editor>
       </el-form-item>
@@ -62,7 +58,6 @@ export default class CategoryEdit extends Vue {
 			this.$set(this.model, 'category', []);
 			this.$set(this.model, 'title', '');
 			this.$set(this.model, 'content', '');
-			this.$set(this.model, 'desc', '');
 		}
 	}
 
